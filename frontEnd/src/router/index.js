@@ -3,9 +3,16 @@ import HomePage from '@/components/HomePage'
 import AboutPage from '@/components/AboutPage'
 import Contact from '@/components/Contact'
 import CartPage from '@/components/CartPage'
+import HoomeForm from '@/components/HoomeForm'
 const   routes =[
+ 
+  {
+    path: '/',
+    name: 'HoomeForm',
+    component: HoomeForm
+  },
     {
-      path: '/',
+      path: '/HomePage',
       name: 'HomePage',
       component: HomePage
     },
@@ -23,7 +30,8 @@ const   routes =[
       path: '/carte',
       name: 'CartPage',
       component: CartPage
-    }
+    },
+   
   ]
 
   const router = createRouter({

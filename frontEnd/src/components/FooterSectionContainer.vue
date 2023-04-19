@@ -16,7 +16,7 @@
           <h3>Connect With Us</h3>
           <div class="centered">
             <ul class="list-inline">
-              <li class="list-inline-item"><router-link to="/">Home</router-link></li>
+              <li class="list-inline-item"><router-link to="/HomePage">Home</router-link></li>
               <li class="list-inline-item"><router-link to="/about">About</router-link></li>
               <li class="list-inline-item"><router-link to="/contact"> Contact</router-link></li>
             </ul>

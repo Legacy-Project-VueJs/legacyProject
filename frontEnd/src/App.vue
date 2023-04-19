@@ -1,4 +1,5 @@
 <template>
+
   <div id="nav" class="sticky_header">
     <div class="header">
       <div class="logo">
@@ -7,7 +8,7 @@
       <div class="mobile-menu">&#9776;</div>
       <ul class="menu">
         <li class="nav_item">
-          <router-link to="/" exact active-class="active_link">Home</router-link>
+          <router-link to="/HomePage" exact active-class="active_link">Home</router-link>
         </li>
         <li class="nav_item">
           <router-link to="/about" active-class="active_link">About</router-link>
@@ -25,9 +26,34 @@
     </div>
   </div>
   <router-view />
+
+  <!-- <div v-if="!isLoggedIn">
+   
+    <template v-if="showLogin">
+      <login-form @loggedIn="isLoggedIn = true"/>
+      <p>No account yet? <span @click="showLogin=false">Sign up</span> instead.</p>
+    </template>
+ 
+    <template v-else>
+      <signup-form @loggedIn="isLoggedIn = true"/>
+      <p>Already registered? <span @click="showLogin=true">Login</span> instead.</p>
+    </template>
+  </div>
+ 
+  <div v-else>
+    <h2>Welcome {{ displayName }}</h2>
+    <button @click="signOut">Sign Out</button>
+  </div> -->
+
 </template>
 
+<script>
+
+</script>
+
+
 <style>
+
 
 
 .header {
